@@ -1,0 +1,47 @@
+/******************************************************************
+STYLESHEET: CONTENT
+
+******************************************************************/
+
+.container {
+    position: relative;
+
+    @include medium {
+
+        &:after {
+            content: "";
+            display: block;
+            background-color: $c1-main;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            bottom: 0;
+            width: 50%;
+            height: 100%;
+            z-index: -5;
+        }
+    }
+}
+
+.section {
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+    @include medium {
+        width: 90%;
+        padding-top: 4em;
+        padding-bottom: 4em;
+    }
+
+    @include large {
+        padding-top: 6em;
+        padding-bottom: 6em;
+    }
+
+    @include xlarge {
+        width: 80%;
+        max-width: 1600px;
+    }
+}

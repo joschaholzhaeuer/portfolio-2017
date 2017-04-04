@@ -1,0 +1,23 @@
+/******************************************************************
+STYLESHEET: BUTTON
+
+******************************************************************/
+
+.btn {
+    background-color: $c1-second;
+    color: $c-white;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1em 2em;
+    margin: 0.5em 0 0;
+
+    &--dark {
+        background-color: $c2-main;
+        transition: background-color 0.2s;
+
+        &:hover {
+            background-color: $c1-second;
+        }
+    }
+}

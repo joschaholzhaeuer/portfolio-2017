@@ -1,0 +1,71 @@
+/******************************************************************
+STYLESHEET: HEADER
+
+******************************************************************/
+
+.header {
+    width: 95%;
+    margin: 2em auto;
+
+    @include medium {
+        width: 90%;
+        margin: 4em auto;
+    }
+
+    @include xlarge {
+        width: 80%;
+        max-width: 1600px;
+    }
+
+    &__logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    &__icon {
+        background-color: $c1-second;
+        display: inline-block;
+        float: right;
+        width: 70px;
+        height: 70px;
+        position: relative;
+        cursor: pointer;
+
+        .icon {
+            display: block;
+            background-color: $c1-main;
+            width: 60%;
+            height: 4px;
+            position: absolute;
+            top: 33px;
+            left: 20%;
+
+            &:before,
+            &:after {
+                content: "";
+                display: block;
+                background-color: $c1-main;
+                width: 100%;
+                height: 4px;
+                position: absolute;
+            }
+
+            &:before {
+                top: -12px;
+            }
+
+            &:after {
+                top: 12px;
+            }
+        }
+    }
+}
+
+.nav {
+    display: none;
+
+    &__list {
+        padding-left: 0;
+        list-style-type: none;
+    }
+}

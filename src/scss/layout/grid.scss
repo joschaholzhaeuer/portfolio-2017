@@ -1,0 +1,40 @@
+/******************************************************************
+STYLESHEET: GRID
+
+******************************************************************/
+
+.row {
+    position: relative;
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.col {
+
+    @include medium {
+        width: 50%;
+        float: left;
+    }
+
+    &--left {
+
+        @include medium {
+            padding-top: 6em;
+            padding-right: 5%;
+        }
+    }
+
+    &--right {
+        background-color: $c1-main;
+        color: $c1-second;
+
+        @include medium {
+            background-color: transparent;
+            padding-left: 5%;
+        }
+    }
+}
