@@ -14,7 +14,7 @@ STYLESHEET: HEADER
 
     @include xlarge {
         width: 80%;
-        max-width: 1600px;
+        max-width: 1400px;
     }
 
     &__logo {
@@ -33,7 +33,7 @@ STYLESHEET: HEADER
 
         .icon {
             display: block;
-            background-color: $c1-main;
+            background-color: $c-white;
             width: 60%;
             height: 4px;
             position: absolute;
@@ -44,7 +44,7 @@ STYLESHEET: HEADER
             &:after {
                 content: "";
                 display: block;
-                background-color: $c1-main;
+                background-color: $c-white;
                 width: 100%;
                 height: 4px;
                 position: absolute;

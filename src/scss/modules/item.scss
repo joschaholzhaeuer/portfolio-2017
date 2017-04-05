@@ -7,8 +7,15 @@ STYLESHEET: ITEM
     padding: 1em 0;
 
     @include large {
-        width: 40%;
+        width: 44%;
         display: inline-block;
-        margin-right: 9%;
+
+        &:nth-child(2n) {
+            margin-left: 5%;
+        }
+
+        &:nth-child(2n-1) {
+            margin-right: 5%;
+        }
     }
 }

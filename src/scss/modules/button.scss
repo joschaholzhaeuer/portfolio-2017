@@ -11,6 +11,8 @@ STYLESHEET: BUTTON
     display: inline-block;
     padding: 1em 2em;
     margin: 0.5em 0 0;
+    letter-spacing: 1px;
+    cursor: pointer;
 
     &--dark {
         background-color: $c2-main;
@@ -18,6 +20,15 @@ STYLESHEET: BUTTON
 
         &:hover {
             background-color: $c1-second;
+        }
+    }
+
+    &--colored {
+        background-color: $c1-second;
+        transition: background-color 0.2s;
+
+        &:hover {
+            background-color: $c2-main;
         }
     }
 }

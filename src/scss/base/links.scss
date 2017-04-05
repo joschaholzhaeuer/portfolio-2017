@@ -4,18 +4,7 @@ STYLESHEET: LINKS
 ******************************************************************/
 
 a {
+    color: inherit;
 	font-family: $f-link;
-
-    &:visited {
-
-    }
-
-    &:hover,
-    &:focus {
-    	
-    }
-
-    &:active {
-
-    }
+    text-decoration: none;
 }

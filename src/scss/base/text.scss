@@ -13,6 +13,7 @@ h4,
 h5,
 h6 {
     font-family: $f-heading;
+    letter-spacing: 1px;
 }
 
 h1 {
@@ -48,6 +49,7 @@ SPECIFIC
 .heading {
     font-weight: normal;
     text-transform: uppercase;
+    letter-spacing: 1px;
 
     &--sub {
         display: block;

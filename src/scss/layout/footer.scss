@@ -2,3 +2,24 @@
 STYLESHEET: FOOTER
 
 ******************************************************************/
+
+.footer {
+    width: 95%;
+    margin: 2em auto 1em;
+
+    @include medium {
+        width: 90%;
+        margin: 4em auto 2em;
+    }
+
+    @include xlarge {
+        width: 80%;
+        max-width: 1400px;
+    }
+
+    .copy {
+        color: $c4-main;
+        font-family: $f-heading;
+        letter-spacing: 1px;
+    }
+}

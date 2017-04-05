@@ -28,20 +28,32 @@ STYLESHEET: CONTENT
     margin: 0 auto;
     padding-top: 2em;
     padding-bottom: 2em;
+    position: relative;
 
     @include medium {
         width: 90%;
-        padding-top: 4em;
-        padding-bottom: 4em;
+        padding-top: 5em;
+        padding-bottom: 5em;
     }
 
     @include large {
-        padding-top: 6em;
-        padding-bottom: 6em;
+        padding-top: 8em;
+        padding-bottom: 8em;
     }
 
     @include xlarge {
         width: 80%;
-        max-width: 1600px;
+        max-width: 1400px;
+    }
+
+    &--contact {
+
+        .col--left {
+            padding-top: 2em;
+        }
+
+        @include large {
+            padding-top: 12em;
+        }
     }
 }

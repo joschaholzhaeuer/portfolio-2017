@@ -12,3 +12,69 @@ STYLESHEET: PROJECTS
         overflow: hidden;
     }
 }
+
+.project {
+
+    &__btn {
+        position: absolute;
+        bottom: 0;
+        width: 70px;
+        height: 70px;
+
+        &.btn--prev {
+            left: 0;
+
+            &:before,
+            &:after {
+                content: "";
+                display: block;
+                background-color: $c-white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-left: -8px;
+                margin-top: -2px;
+                width: 20px;
+                height: 4px;
+            }
+
+            &:before {
+                transform-origin: left bottom;
+                transform: rotate(-45deg);
+            }
+
+            &:after {
+                transform-origin: left top;
+                transform: rotate(45deg);
+            }
+        }
+
+        &.btn--next {
+            right: 0;
+
+            &:before,
+            &:after {
+                content: "";
+                display: block;
+                background-color: $c-white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-left: -12px;
+                margin-top: -2px;
+                width: 20px;
+                height: 4px;
+            }
+
+            &:before {
+                transform-origin: right top;
+                transform: rotate(-45deg);
+            }
+
+            &:after {
+                transform-origin: right bottom;
+                transform: rotate(45deg);
+            }
+        }
+    }
+}
