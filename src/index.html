@@ -23,15 +23,15 @@
 
         <header class="header">
 
-            <img src="http://placehold.it/100x100" alt="" class="header__logo">
+            <a href="./" class="link link--home"><img src="http://placehold.it/100x100" alt="" class="header__logo"></a>
             <div class="header__icon">
                 <span class="icon icon-menu"></span>
             </div>
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav__list-item"><a href="#intro" class="nav__link">Intro</a></li>
-                    <li class="nav__list-item"><a href="#projects" class="nav__link">Projekte</a></li>
-                    <li class="nav__list-item"><a href="#contact" class="nav__link">Kontakt</a></li>
+                    <li class="nav__list-item"><a href="./#index.html" class="nav__link">Intro</a></li>
+                    <li class="nav__list-item"><a href="./#projects.html" class="nav__link">Projekte</a></li>
+                    <li class="nav__list-item"><a href="./#contact.html" class="nav__link">Kontakt</a></li>
                 </ul>
             </nav>
 
@@ -51,90 +51,23 @@
                     <div class="item">
                         <h2 class="heading heading--small">Mumbl</h2>
                         <p class="text text--dark">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-                        <a href="#project-mumbl" class="btn btn--dark">Zum Projekt</a>
+                        <a href="./projects.html#project--mumbl" class="btn btn--dark">Zum Projekt</a>
                     </div>
                     <div class="item">
                         <h2 class="heading heading--small">Reftreff</h2>
                         <p class="text text--dark">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-                        <a href="#project-reftreff" class="btn btn--dark">Zum Projekt</a>
+                        <a href="./projects.html#project--reftreff" class="btn btn--dark">Zum Projekt</a>
                     </div>
                     <div class="item">
                         <h2 class="heading heading--small">Checkout Prozess</h2>
                         <p class="text text--dark">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-                        <a href="#project-checkout" class="btn btn--dark">Zum Projekt</a>
+                        <a href="./projects.html#project--checkout" class="btn btn--dark">Zum Projekt</a>
                     </div>
                     <div class="item">
                         <h2 class="heading heading--small">Frontend Devbase</h2>
                         <p class="text text--dark">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-                        <a href="#project-devbase" class="btn btn--dark">Zum Projekt</a>
+                        <a href="./projects.html#project--devbase" class="btn btn--dark">Zum Projekt</a>
                     </div>
-                </div>
-
-            </section>
-
-            <section id="projects" class="section section--projects">
-
-                <div id="project--checkout" class="project row">
-
-                    <div class="col col--left">
-                        <h2 class="heading"><span class="heading--sub">Projekt</span><span class="heading--main">Checkout Prozess</span></h2>
-                        <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-                        <a href="http://dreiqbik.de" class="btn btn--dark">Website besuchen</a>
-                    </div>
-
-                    <div class="technology">
-                        <div class="technology__icon technology__icon--1">
-                            <span class="technology__text">Gulp</span>
-                            <span class="icon icon--gulp"></span>
-                        </div>
-                        <div class="technology__icon technology__icon--2">
-                            <span class="technology__text">GitHub</span>
-                            <span class="icon icon--github"></span>
-                        </div>
-                        <div class="technology__icon technology__icon--3">
-                            <span class="technology__text">WordPress</span>
-                            <span class="icon icon--wordpress"></span>
-                        </div>
-                    </div>
-
-                    <div class="col col--right">
-                        <figure class="img-wrapper">
-                            <img src="http://placehold.it/800x900" alt="Screendesign Checkout Prozesses" class="img">
-                        </figure>
-                    </div>
-
-                </div>
-
-                <span class="btn btn--prev btn--colored project__btn"></span>
-                <span class="btn btn--next btn--colored project__btn"></span>
-
-            </section>
-
-            <section id="contact" class="section section--contact row">
-
-                <div class="col col--left">
-                    <h2 class="heading"><span class="heading--main">Kontakt</span></h2>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-                    <a href="mailto:mail@joschaholzhaeuer.de" class="btn btn--dark">E-Mail schreiben</a>
-                </div>
-                <div class="col col--right">
-                    <ul class="links">
-                        <li class="links__item">
-                            <a href="#intro" class="links__link">Intro</a>
-                        </li>
-                        <li class="links__item">
-                            <a href="#projects" class="links__link">Projekte</a>
-                            <ul class="sublinks">
-                                <li class="sublinks__item"><a href="#project-mumbl" class="sublinks__link">Mumbl</a></li>
-                                <li class="sublinks__item"><a href="#project-reftreff" class="sublinks__link">Reftreff</a></li>
-                                <li class="sublinks__item"><a href="#project-checkout" class="sublinks__link">Checkout Prozess</a></li>
-                                <li class="sublinks__item"><a href="#project-devbase" class="sublinks__link">Frontend Devbase</a></li>
-                            </ul>
-                        </li>
-                        <li class="links__item">
-                            <a href="#impressum" class="links__link">Impressum</a>
-                        </li>
-                    </ul>
                 </div>
 
             </section>
@@ -143,6 +76,11 @@
 
         <footer class="footer">
             <p class="copy">&copy; 2017 Joscha Holzhäuer</p>
+            <div class="links">
+                <a href="./contact.html" class="link">Kontakt</a>
+                <span>|</span>
+                <a href="./impressum.html" class="link">Impressum</a>
+            </div>
         </footer>
 
 

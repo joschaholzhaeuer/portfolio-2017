@@ -14,8 +14,18 @@ STYLESHEET: PROJECTS
 }
 
 .project {
+    padding: 6em 0;
+
+    &:nth-child(1) {
+        padding-top: 0;
+    }
+
+    &:nth-child(4) {
+        padding-bottom: 0;
+    }
 
     &__btn {
+        display: none !important;
         position: absolute;
         bottom: 0;
         width: 70px;
