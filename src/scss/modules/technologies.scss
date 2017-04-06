@@ -9,8 +9,8 @@ STYLESHEET: TECHNOLOGIES
         position: absolute;
         top: 0;
         left: 50%;
-        margin-left: -45px;
-        width: 90px;
+        margin-left: -40px;
+        width: 80px;
         height: 100%;
     }
 
@@ -20,7 +20,7 @@ STYLESHEET: TECHNOLOGIES
             position: absolute;
             left: 0;
             width: 100%;
-            height: 90px;
+            height: 80px;
 
             &:before {
                 content: "";
@@ -39,17 +39,47 @@ STYLESHEET: TECHNOLOGIES
 
             &--1 {
                 top: 16em;
-                margin-top: -162px;
+                margin-top: -143px;
+
+                &:hover {
+
+                    & > .technology__text {
+                        visibility: visible;
+                        opacity: 1;
+                        background-color: $c1-second;
+                        animation: slide-in 0.3s;
+                    }
+                }
             }
 
             &--2 {
                 top: 16em;
-                margin-top: -35px;
+                margin-top: -30px;
+
+                &:hover {
+
+                    & > .technology__text {
+                        visibility: visible;
+                        opacity: 1;
+                        background-color: $c1-second;
+                        animation: slide-in 0.3s;
+                    }
+                }
             }
 
             &--3 {
                 top: 16em;
-                margin-top: 92px;
+                margin-top: 83px;
+
+                &:hover {
+
+                    & > .technology__text {
+                        visibility: visible;
+                        opacity: 1;
+                        background-color: $c1-second;
+                        animation: slide-in 0.3s;
+                    }
+                }
             }
 
             .icon {
@@ -57,12 +87,52 @@ STYLESHEET: TECHNOLOGIES
                 display: block;
                 width: 50px;
                 height: 50px;
-                margin: 20px auto;
+                margin: 15px auto;
+                border-radius: 50%;
             }
         }
     }
 
     &__text {
-        display: none;
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        right: 160%;
+        top: 50%;
+        margin-top: -35px;
+        height: 70px;
+        color: $c-white;
+        font-family: $f-heading;
+        font-weight: normal;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 1.4em 2em;
+        transition: all 0.1s ease-in;
+
+        &:after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            right: -8px;
+            top: 50%;
+            margin-top: -8px;
+            border-left: 8px solid $c1-second;
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+        }
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        right: 200%;
+    }
+    60% {
+        right: 150%;
+    }
+    100% {
+        opacity: 1;
+        right: 160%;
     }
 }
