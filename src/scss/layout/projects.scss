@@ -10,18 +10,26 @@ STYLESHEET: PROJECTS
         margin: 0;
         padding: 0;
         overflow: hidden;
+
+        &:hover {
+            background-color: $c1-second;
+
+            .img {
+                opacity: 0;
+            }
+        }
     }
 }
 
 .project {
-    padding: 6em 0;
+    margin: 6em 0;
 
     &:nth-child(1) {
-        padding-top: 0;
+        margin-top: 0;
     }
 
     &:nth-child(4) {
-        padding-bottom: 0;
+        margin-bottom: 0;
     }
 
     &__btn {
@@ -85,6 +93,14 @@ STYLESHEET: PROJECTS
                 transform-origin: right bottom;
                 transform: rotate(45deg);
             }
+        }
+    }
+
+    @include medium {
+
+        .col--left {
+            padding-top: 4em;
+            padding-right: 12%;
         }
     }
 }
